@@ -35,63 +35,63 @@ search.addEventListener('click', ()=>{
         
         let willBeSent;
         let color;
-        let pointerFirstColor;
-        let pointerSecondColor;
+        // let pointerFirstColor;
+        // let pointerSecondColor;
 
         switch(json.weather[0].main) {
             case 'Clear':
                 image.src='/resources/images/sunny.jpg';
                 willBeSent='Lovely weather! Come get some Vitamin D!';
                 color='#FFD966';
-                pointerFirstColor='#fff';
-                pointerSecondColor='#06283D';
+                // pointerFirstColor='#fff';
+                // pointerSecondColor='#06283D';
                 break;
 
             case 'Rain':
                 image.src='/resources/images/rainy.jpg';
                 willBeSent='Pouring outside! Get inside!';
                 color='#06283D';
-                pointerFirstColor='#fff';
-                pointerSecondColor='#dff6ff';
+                // pointerFirstColor='#fff';
+                // pointerSecondColor='#dff6ff';
                 break;
 
             case 'Snow':
                 image.src='/resources/images/snowy.jpg';
                 willBeSent='Do you wanna build a snowman?';
                 color='#DAF5FF';
-                pointerFirstColor='#fff';
-                pointerSecondColor='#06283D';
+                // pointerFirstColor='#fff';
+                // pointerSecondColor='#06283D';
                 break;
 
             case 'Clouds':
                 image.src='/resources/images/cloudy.jpg';
                 willBeSent='Moody weather...';
                 color='#F6F1F1';
-                pointerFirstColor='#06283D';
-                pointerSecondColor='#EAE0DA';
+                // pointerFirstColor='#06283D';
+                // pointerSecondColor='#EAE0DA';
                 break;
 
             case 'Haze':
                 image.src='/resources/images/thunderstorm.jpg';
                 willBeSent='Bleah.';
                 color='#EEEEEE';
-                pointerFirstColor='#fff';
-                pointerSecondColor='#06283D';
+                // pointerFirstColor='#fff';
+                // pointerSecondColor='#06283D';
                 break;
 
             case 'Drizzle':
                 image.src='/resources/images/rainy.jpg';
                 willBeSent='Drizzle? At least if it would have been raining...';
                 color='#BAD7E9';
-                pointerFirstColor='#fff';
-                pointerSecondColor='#06283D';
+                // pointerFirstColor='#fff';
+                // pointerSecondColor='#06283D';
                 break;    
 
             default:
                 willBeSent='Whatever.';
                 color='#C0EEF2';
-                pointerFirstColor='#fff';
-                pointerSecondColor='#06283D';
+                // pointerFirstColor='#fff';
+                // pointerSecondColor='#06283D';
                 image.src='';
         }
 
@@ -107,9 +107,11 @@ search.addEventListener('click', ()=>{
         weatherDetails.classList.add('fadeIn');
         body.style.background=color;
         search.style.background=color;
-        // search.style.color=pointerFirstColor;
-        // searchHover.style.color=pointerSecondColor;
         body.classList.add('fadeIn');
         container.style.height = '680px';
+        // search.style.color=pointerFirstColor;
+        // searchHover.style.color=pointerSecondColor;
+        // searchHover.style.background=color;
+        // searchHover.classList.add('fadeIn');
     });
 });
