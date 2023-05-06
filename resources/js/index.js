@@ -87,6 +87,12 @@ search.addEventListener('click', ()=>{
                 // pointerSecondColor='#06283D';
                 break;    
 
+            case 'Mist':
+                image.src='/resources/images/cloudy.jpg';
+                willBeSent='Mist? At least if it would have been raining...';
+                color='#BAD7E9';
+                break;
+                
             default:
                 willBeSent='Whatever.';
                 color='#C0EEF2';
